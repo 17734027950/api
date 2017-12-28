@@ -1,15 +1,8 @@
 <?php
 // +----------------------------------------------------------------------
-// | When work is a pleasure, life is a joy!
+// |  User: Yangchi  |  Email:17734027950@189.com  | Time:2017/12/28 17:20
 // +----------------------------------------------------------------------
-// |  User: ShouKun Liu  |  Email:24147287@qq.com  | Time:2017/3/15 9:26
-// +----------------------------------------------------------------------
-// | TITLE: this to do?
-// +----------------------------------------------------------------------
-
-
 namespace Yangapi\auth;
-
 
 use Yangapi\contract\AuthContract;
 use Yangapi\exception\UnauthorizedException;

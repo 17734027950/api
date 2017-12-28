@@ -1,15 +1,10 @@
 <?php
 // +----------------------------------------------------------------------
-// | When work is a pleasure, life is a joy!
-// +----------------------------------------------------------------------
-// |  User: ShouKun Liu  |  Email:24147287@qq.com  | Time:2017/3/9 15:10
+// |  User: Yangchi  |  Email:17734027950@qq.com  | Time:2017/12/28 17:28
 // +----------------------------------------------------------------------
 // | TITLE: basic
 // +----------------------------------------------------------------------
-
-
 namespace Yangapi\auth;
-
 
 use Yangapi\contract\AuthContract;
 use Yangapi\exception\UnauthorizedException;
@@ -18,7 +13,6 @@ use think\Request;
 
 abstract class Basic implements AuthContract
 {
-
     protected $username;
     protected $password;
 
@@ -56,7 +50,6 @@ abstract class Basic implements AuthContract
         $this->username = $username;
         $this->password = $password;
         return $this;
-
     }
 
     /**
@@ -70,5 +63,4 @@ abstract class Basic implements AuthContract
      * @return mixed
      */
     abstract public function getUser();
-
 }

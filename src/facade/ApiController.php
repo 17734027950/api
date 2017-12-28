@@ -203,7 +203,7 @@ abstract class ApiController
      */
     private static function _auth()
     {
-        $baseAuth = Factory::getInstance(\DawnApi\auth\BaseAuth::class);
+        $baseAuth = Factory::getInstance(\Yangapi\auth\BaseAuth::class);
         try {
             return $baseAuth->auth(self::$app['auth']);
         } catch (UnauthorizedException $e) {

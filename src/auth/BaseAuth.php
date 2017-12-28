@@ -1,15 +1,8 @@
 <?php
 // +----------------------------------------------------------------------
-// | When work is a pleasure, life is a joy!
+// |  User: Yangchi  |  Email:17734027950@189.com  | Time:2017/12/28 17:19
 // +----------------------------------------------------------------------
-// |  User: ShouKun Liu  |  Email:24147287@qq.com  | Time:2017/3/9 15:10
-// +----------------------------------------------------------------------
-// | TITLE: this to do?
-// +----------------------------------------------------------------------
-
-
 namespace Yangapi\auth;
-
 
 use Yangapi\exception\UnauthorizedException;
 use think\Exception;
@@ -29,6 +22,5 @@ class BaseAuth
         $request = Request::instance();
         return $auth->authenticate($request);
     }
-
 
 }

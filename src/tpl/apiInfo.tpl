@@ -96,7 +96,7 @@
                                     <div id="collapseOne" class="panel-collapse collapse in">
                                         <div class="panel-body">
                                             <div class="row">
-                                                <div class="col-sm-6">
+                                                <div class="col-sm-12">
                                                     <dl class="dl-horizontal">
                                                         <dt>请求地址：</dt>
                                                         <dd><a target="_blank"
@@ -104,7 +104,7 @@
                                                         </dd>
                                                     </dl>
                                                 </div>
-                                                <div class="col-sm-6" id="cluster_info">
+                                                <div class="col-sm-12" id="cluster_info">
                                                     <dl class="dl-horizontal">
                                                         <dt>版本：</dt>
                                                         <dd>{$classDoc.version}</dd>
