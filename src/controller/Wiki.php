@@ -7,9 +7,9 @@
 // | TITLE: 文档显示
 // +----------------------------------------------------------------------
 
-namespace DawnApi\controller;
+namespace Yangapi\controller;
 
-use DawnApi\facade\Doc;
+use Yangapi\facade\Doc;
 
 class Wiki extends Doc
 {

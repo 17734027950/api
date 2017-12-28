@@ -8,11 +8,11 @@
 // +----------------------------------------------------------------------
 
 
-namespace DawnApi\auth;
+namespace Yangapi\auth;
 
 
-use DawnApi\contract\AuthContract;
-use DawnApi\exception\UnauthorizedException;
+use Yangapi\contract\AuthContract;
+use Yangapi\exception\UnauthorizedException;
 use think\Exception;
 use think\Request;
 

@@ -8,7 +8,7 @@
 // +----------------------------------------------------------------------
 
 
-namespace DawnApi\facade;
+namespace Yangapi\facade;
 
 
 class Factory

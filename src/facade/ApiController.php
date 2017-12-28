@@ -6,15 +6,15 @@
 // +----------------------------------------------------------------------
 // | TITLE: API基础
 // +----------------------------------------------------------------------
-namespace DawnApi\facade;
+namespace Yangapi\facade;
 
 use think\Config;
 use  think\App;
 use think\Request;
 use think\Exception;
-use DawnApi\contract\AuthContract;
+use Yangapi\contract\AuthContract;
 use think\exception\HttpResponseException;
-use DawnApi\exception\UnauthorizedException;
+use Yangapi\exception\UnauthorizedException;
 
 
 abstract class ApiController

@@ -6,7 +6,7 @@
 // +----------------------------------------------------------------------
 // | TITLE: 发送响应
 // +----------------------------------------------------------------------
-namespace DawnApi\facade;
+namespace Yangapi\facade;
 
 use think\Response;
 use think\response\Redirect;

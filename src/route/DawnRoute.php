@@ -6,12 +6,12 @@
 // +----------------------------------------------------------------------
 // | TITLE: this to do?
 // +----------------------------------------------------------------------
-namespace DawnApi\route;
+namespace Yangapi\route;
 
 use  think\App;
 use think\Route;
 use think\Request;
-use  DawnApi\controller\Wiki;
+use  Yangapi\controller\Wiki;
 
 class DawnRoute
 {
