@@ -1,19 +1,20 @@
 {
-"name": "17734027950/api",
-"description": "A RESTful API package",
-"license": "Apache-2.0",
-"authors": [
-    {
-    "name": "17734027950",
-    "email": "17734027950@qq.com"
-    }
-],
-"autoload": {
-    "psr-4": {
-        "Yangapi\\": "src/"
-    }
-},
-"require": {
-    "topthink/framework": "5.0.*",
-    "ircmaxell/random-lib": "^1.2"
+	"name": "17734027950/api",
+	"description": "A RESTful API package",
+	"license": "Apache-2.0",
+	"authors": [
+	    {
+	    "name": "17734027950",
+	    "email": "17734027950@qq.com"
+	    }
+	],
+	"autoload": {
+	    "psr-4": {
+	        "Yangapi\\": "src/"
+	    }
+	},
+	"require": {
+	    "topthink/framework": "5.0.*",
+	    "ircmaxell/random-lib": "^1.2"
+	}
 }
