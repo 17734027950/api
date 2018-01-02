@@ -4,10 +4,10 @@
 // +----------------------------------------------------------------------
 namespace Yangapi\route;
 
-use  think\App;
+use think\App;
 use think\Route;
 use think\Request;
-use  Yangapi\controller\Wiki;
+use Yangapi\controller\Wiki;
 
 class YangRoute
 {
