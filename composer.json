@@ -14,7 +14,7 @@
     }
   },
   "require": {
-    "topthink/framework": "^5.0",
+    "topthink/framework": "5.0.*",
     "ircmaxell/random-lib": "^1.2"
   }
 }

@@ -9,7 +9,7 @@ use think\Route;
 use think\Request;
 use  Yangapi\controller\Wiki;
 
-class DawnRoute
+class YangRoute
 {
     public static function wiki()
     {
