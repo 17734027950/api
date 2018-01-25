@@ -27,7 +27,7 @@
 
 
 </head>
-{php}
+<php>
     $label_class =array(
     'success ',
     'warning ',
@@ -36,7 +36,7 @@
     'primary ',
     'inverse ',
     ' default ');
-{/php}
+</php>
 
 
 <body class="fixed-sidebar full-height-layout gray-bg" style="overflow:hidden">
@@ -129,12 +129,12 @@
                                         <div class="hr-line-dashed"></div>
                                         <!--请求列表-->
                                         <ul class="folder-list" style="padding: 0">
-                                            {foreach name="methodDoc" item="vo" key="k" }
-                                                {php} $label_class_one='';$label_class_one = array_rand($label_class,1){/php}
+                                            <foreach name="methodDoc" item="vo" key="k">
+                                                <php> $label_class_one='';$label_class_one = array_rand($label_class,1)</php>
                                                 <li><a href="#{$k}"><span
                                                                 class="label label-{$label_class[$label_class_one]}">{$k}</span>
                                                         &nbsp; {$vo.title}</a></li>
-                                            {/foreach}
+                                            </foreach>
 
                                         </ul>
                                         <!--请求列表-->
@@ -143,7 +143,7 @@
                                 </div>
                             </div>
                         </div>
-                        {notempty  name="classDoc.readme"}
+                        <notempty  name="classDoc.readme">
                                 <div class="col-md-12">
                                     <div class="ibox float-e-margins">
                                         <div class="ibox-title" data-target="#markdown-class">
@@ -155,37 +155,37 @@
                                         </div>
                                     </div>
                                 </div>
-                        {/notempty}
+                        </notempty>
                     </div>
 
 
                     <!--methodDoc-->
-                    {foreach name="methodDoc" item="vo" key="k" }
+                    <foreach name="methodDoc" item="vo" key="k">
                         <div id="{$k}" class="row">
                             <div id="content-{$k}" class="ibox float-e-margins">
                                 <div class="ibox-title">
                                     <span class="label label-success">
-                                    {php}
+                                    <php>
                                         if(isset($restToMethod[$k])){
                                         echo  $restToMethod[$k];
                                         }
-                                    {/php}
+                                    </php>
                                         {$k}
                                     </span>
                                     <h5>  {$vo.title} </h5>
 
                                 </div>
                                 <!--title,desc-->
-                                {notempty  name="vo.desc"}
+                                <notempty  name="vo.desc">
                                     <div class="ibox-content">
                                         <div class="well">
                                             {$vo.desc}
                                         </div>
                                     </div>
-                                {/notempty}
+                                </notempty>
                                 <!--title,desc-->
                                 <!--readme-->
-                                {notempty  name="vo.readme"}
+                                <notempty  name="vo.readme">
                                     <div class="row">
                                         <div class="col-lg-12">
                                             <div class="ibox float-e-margins">
@@ -200,13 +200,13 @@
                                             </div>
                                         </div>
                                     </div>
-                                {/notempty}
+                                </notempty>
 
 
                                 <!--readme-->
 
                                 <!--request-->
-                                {notempty  name="vo.rules"}
+                                <notempty  name="vo.rules">
                                     <div class="ibox-title" data-toggle="collapse" data-target="#data-{$k}">
                                         <h5>
                                             <small class="m-l-sm">* 请求参数</small>
@@ -227,9 +227,9 @@
                                                         <table id="dataTable-{$k}" data-mobile-responsive="true">
                                                             <thead>
                                                             <tr>
-                                                                {foreach name="fieldMaps.data" item="data" key="datak" }
+                                                                <foreach name="fieldMaps.data" item="data" key="datak">
                                                                     <th data-field="{$datak}">{$data}</th>
-                                                                {/foreach}
+                                                                </foreach>
                                                             </tr>
                                                             </thead>
                                                         </table>
@@ -240,10 +240,10 @@
 
                                         </div>
                                     </div>
-                                {/notempty}
+                                </notempty>
                                 <!--request-->
                                 <!--response-->
-                                {notempty  name="vo.return"}
+                                <notempty  name="vo.return">
                                     <div class="ibox-title" data-toggle="collapse" data-target="#return-{$k}">
                                         <h5>
                                             <small class="m-l-sm">* 返回参数</small>
@@ -264,9 +264,9 @@
                                                         <table id="returnTable-{$k}" data-mobile-responsive="true">
                                                             <thead>
                                                             <tr>
-                                                                {foreach name="fieldMaps.return" item="returnv" key="returnk" }
+                                                                <foreach name="fieldMaps.return" item="returnv" key="returnk">
                                                                     <th data-field="{$returnk}">{$returnv}</th>
-                                                                {/foreach}
+                                                                </foreach>
                                                             </tr>
                                                             </thead>
                                                         </table>
@@ -277,12 +277,12 @@
 
                                         </div>
                                     </div>
-                                {/notempty}
+                                </notempty>
                                 <!--response-->
                             </div>
 
                         </div>
-                    {/foreach}
+                    </foreach>
                     <!--methodDoc-->
 
 
@@ -342,7 +342,7 @@
     });
 
 </script>
-{foreach name="methodDoc" item="vo" key="k" }
+<foreach name="methodDoc" item="vo" key="k">
     <script>
         (function (document, window, $) {
             'use strict';
@@ -407,7 +407,7 @@
         });
 
     </script>
-{/foreach}
+</foreach>
 
 
 <!-- 自定义js -->
